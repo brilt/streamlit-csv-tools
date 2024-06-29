@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
-from app import display_contact_section
+from Home import display_contact_section
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
@@ -78,4 +78,4 @@ if uploaded_file is not None:
         st.rerun()
 
 
-display_contact_section()
+display_contact_section('row_filter')

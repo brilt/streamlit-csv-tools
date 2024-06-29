@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+from app import display_contact_section
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
@@ -75,3 +76,6 @@ if uploaded_file is not None:
     if st.button("Clear Filters"):
         st.session_state.filters = []
         st.rerun()
+
+
+display_contact_section()

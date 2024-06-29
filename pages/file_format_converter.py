@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+from app import display_contact_section
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
@@ -33,3 +34,5 @@ if st.button("Convert"):
             st.error("Invalid file format for the selected conversion.")
     else:
         st.error("Please upload a file.")
+
+display_contact_section()

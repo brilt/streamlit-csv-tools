@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+from app import display_contact_section
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
@@ -23,3 +24,5 @@ if st.button("Convert to JSON"):
             st.download_button('Download JSON', f, file_name=f"{os.path.splitext(uploaded_file.name)[0]}.json")
     else:
         st.error("Please upload a CSV file.")
+
+display_contact_section()

@@ -3,10 +3,12 @@ import pandas as pd
 import os
 import uuid
 import zipfile
+from app import display_contact_section
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
+
 
 
 st.header("CSV Splitter")
@@ -43,3 +45,6 @@ if st.button("Split CSV"):
             st.download_button('Download ZIP', f, file_name=f'{file_base}_split.zip')
     else:
         st.error("Please upload a CSV file and enter the number of rows per file.")
+
+
+display_contact_section()

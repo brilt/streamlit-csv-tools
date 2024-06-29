@@ -91,3 +91,6 @@ This tool filters rows in a CSV file based on specific criteria.
 6. The filtered data will be displayed below the original data.
 7. Download the filtered CSV file.
 
+## Contact Us
+
+Use the "Contact Us" section in the application to report bugs, request new features, or send miscellaneous messages. Fill out the form with the necessary details and submit it. You will receive a confirmation message if your submission is successful. The form is made to send a message using a telegram bot by providing the chat ID and the bot http API.

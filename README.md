@@ -9,19 +9,17 @@ A Streamlit-based web application that provides various tools for working with C
 - Row Filtering Tool
 
 ## Project Structure
-
-csv_tool_website/
-│
-├── app.py
-├── pages/
-│   ├── csv_splitter.py
-│   ├── csv_to_json.py
-│   ├── file_format_converter.py
-│   ├── row_filter.py
-├── uploads/
-│   ├── (temporary uploaded files and generated zip/json files)
-├── requirements.txt
-└── README.md
+    ├── csv_tool_website
+    │   ├── app.py
+    │   ├── pages
+    │   │   ├── csv_splitter.py
+    │   │   ├── csv_to_json.py
+    │   │   ├── file_format_converter.py
+    │   │   ├── row_filter.py
+    │   ├── uploades
+    │   │   ├── (temporary uploaded files and generated zip/json files)
+    │   ├── requirements.txt
+    │   └── README.md
 
 
 ## Installation
@@ -35,7 +33,7 @@ csv_tool_website/
 2. **Create a virtual environment and activate it**:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   source venv/bin/activate  # On Windows, use `venv\Scripts\Activate.ps1` or `venv\Scripts\activate.bat`
    ```
 
 3. **Install the dependencies**:

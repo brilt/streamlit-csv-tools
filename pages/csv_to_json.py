@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
-from Home import display_contact_section
+from app import display_contact_section
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):

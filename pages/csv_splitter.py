@@ -3,7 +3,7 @@ import pandas as pd
 import os
 import uuid
 import zipfile
-from Home import display_contact_section
+from app import display_contact_section
 
 UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):

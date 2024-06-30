@@ -8,7 +8,7 @@ A Streamlit-based web application that provides various tools for working with C
 
 ## Project Structure
     ├── csv_tool_website
-    │   ├── Home.py
+    │   ├── app.py
     │   ├── pages
     │   │   ├── csv_splitter.py
     │   │   ├── csv_to_json.py
@@ -43,7 +43,7 @@ A Streamlit-based web application that provides various tools for working with C
 
 1. **Run the Streamlit application**:
    ```bash
-   streamlit run Home.py
+   streamlit run app.py
    ```
 
 2. **Access the website**:
